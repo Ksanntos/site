@@ -1,0 +1,55 @@
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin transitionsGeneric($transition, $time){
+    -moz-transition:    $transition $time;
+    -o-transition:      $transition $time;
+    -webkit-transition: $transition $time;
+    transition:         $transition $time;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+@mixin sombra(){
+    box-shadow: 5px 5px 11px #888;
+    -webkit-box-shadow: 5px 5px 11px #888;
+    -moz-box-shadow: 5px 5px 11px #888;    
+}
+
+@mixin opacity(){
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin element($name) {
+  @at-root #{&}__#{$name} {
+    @content;
+  }
+}
+
+@mixin modifier($name) {
+  @at-root #{&}--#{$name} {
+    @content;
+  }
+}

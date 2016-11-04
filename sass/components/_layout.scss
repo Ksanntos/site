@@ -1,0 +1,11 @@
+.block {
+  color: red;
+
+  @include element(element) {
+    color: green;
+
+    @include modifier(modifier) {
+      color: blue;
+    }
+  }
+}
