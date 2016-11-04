@@ -1,2 +1,7 @@
 node_modules/
 bower_components/
+sass-cache/
+.sass-cache/a4d5282d6aa5491399135296c9647c14aefc34e7/index.scssc
+.sass-cache/deb57034cab5c5e2d224a528bfe8e63a5609b58b/_layout.scssc
+.sass-cache/deb57034cab5c5e2d224a528bfe8e63a5609b58b/_mixins.scssc
+.sass-cache/deb57034cab5c5e2d224a528bfe8e63a5609b58b/_variaveis.scssc

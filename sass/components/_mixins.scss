@@ -42,6 +42,10 @@
     text-overflow: ellipsis;
 }
 
+/*
+	BEM
+*/
+
 @mixin element($name) {
   @at-root #{&}__#{$name} {
     @content;

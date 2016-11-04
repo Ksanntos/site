@@ -1,0 +1,28 @@
+/*
+	Controla todos os Zindexs
+*/
+/*
+	BEM
+*/
+.block {
+  color: red; }
+  .block__element {
+    color: green; }
+    .block__element--modifier {
+      color: blue; }
+
+.site-header {
+  z-index: 3; }
+
+.teste {
+  z-index: 4; }
+
+.site-header {
+  padding: 2rem;
+  font-size: 1.8rem; }
+  @media only screen and (min-width: 1024px) {
+    .site-header {
+      padding-top: 4rem;
+      font-size: 2.4rem; } }
+
+/*# sourceMappingURL=index.css.map */

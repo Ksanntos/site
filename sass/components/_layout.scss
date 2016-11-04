@@ -1,3 +1,5 @@
+
+
 .block {
   color: red;
 
@@ -8,4 +10,21 @@
       color: blue;
     }
   }
+}
+
+.site-header {
+    z-index: z('site-header');
+}
+
+.teste{
+    z-index: z('modal');
+}
+
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
 }
