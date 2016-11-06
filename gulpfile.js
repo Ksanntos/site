@@ -15,7 +15,8 @@ var gulp = require('gulp')
 	,less = require('gulp-less')
 	,mainBowerFiles = require('main-bower-files')
 	,es = require('event-stream')
-	,wiredep = require('wiredep').stream;
+	,wiredep = require('wiredep').stream
+    ,sass = require('gulp-sass');
 
 gulp.task('default', ['copy'], function() {
 	gulp.start('build-img', 'usemin');
@@ -71,7 +72,7 @@ gulp.task('wiredep', function () {
 	    .pipe(gulp.dest('src'));
 });
 
-gulp.task('server', ['wiredep'], ['sass'], function() {
+gulp.task('serve', ['sass'], function() {
 		browserSync.init({
 				server: {
 						baseDir: 'src'

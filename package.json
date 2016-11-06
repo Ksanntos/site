@@ -34,9 +34,11 @@
     "gulp-inject": "^4.1.0",
     "gulp-jshint": "^1.11.2",
     "gulp-less": "^3.0.3",
+    "gulp-sass": "^2.3.2",
     "gulp-uglify": "^1.4.1",
     "gulp-usemin": "^0.3.14",
     "jshint-stylish": "^2.0.1",
+    "main-bower-files": "^2.13.1",
     "wiredep": "^4.0.0"
   }
 }
