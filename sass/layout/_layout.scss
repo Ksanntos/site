@@ -1,5 +1,16 @@
+html,
+body{
+    background-color: $bgApp;
+}
 
+.wrap {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-left: $widthMenu;
+}
 
+/* Exemplos */
 .block {
   color: red;
 

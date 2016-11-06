@@ -1,0 +1,21 @@
+{
+  "name": "Dashboard",
+  "description": "Projeto Pessoal",
+  "main": "index.js",
+  "authors": [
+    "Klinger"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Ksanntos/site",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

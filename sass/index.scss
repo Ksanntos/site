@@ -1,6 +1,16 @@
 /*
-    Teste
+    Import Components
 */
 @import "components/_variaveis.scss";
 @import "components/_mixins.scss";
-@import "components/_layout.scss";
+@import "components/_fonts.scss";
+@import "components/_resets.scss";
+@import "components/_help.scss";
+@import "components/_header.scss";
+@import "components/_menu.scss";
+@import "components/_forms.scss";
+@import "components/_tables.scss";
+/*
+	Import Layout App
+*/
+@import "layout/_layout.scss";

@@ -54,16 +54,11 @@ gulp.task('usemin', function() {
 });
 
 // task para o sass 
-gulp.task('sass', ['watch'], function(){
+gulp.task('sass', function(){
     return gulp.src('sass/**/*.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('src/css'));
+        .pipe(gulp.dest('src/assets/css'));
 });
-
-// task watch
-gulp.task('watch', function(){
-    gulp.watch('sass/**/*.scss', ['sass']);
-}); 
 
 // For development:
 gulp.task('wiredep', function () {
@@ -73,25 +68,27 @@ gulp.task('wiredep', function () {
 });
 
 gulp.task('serve', ['sass'], function() {
-		browserSync.init({
-				server: {
-						baseDir: 'src'
-				}
-		});
+	browserSync.init({
+			server: {
+					baseDir: 'src'
+			}
+	});
 
-		gulp.watch('src/**/*').on('change', browserSync.reload);
+	gulp.watch('src/**/*').on('change', browserSync.reload);
 
-		gulp.watch('src/**/*.js').on('change', function(event) {
-				console.log("Linting " + event.path);
-				gulp.src(event.path)
-						.pipe(jshint())
-						.pipe(jshint.reporter(jshintStylish));
-		});
+	gulp.watch('sass/**/*.scss', ['sass']);
 
-		gulp.watch('src/assets/css/**/*.css').on('change', function(event) {
-				console.log("Linting " + event.path);
-				gulp.src(event.path)
-						.pipe(csslint())
-						.pipe(csslint.reporter());
-		});  
+	gulp.watch('src/assets/js/**/*.js').on('change', function(event) {
+			console.log("Linting " + event.path);
+			gulp.src(event.path)
+					.pipe(jshint())
+					.pipe(jshint.reporter(jshintStylish));
+	});
+
+	gulp.watch('src/assets/css/**/*.css').on('change', function(event) {
+			console.log("Linting " + event.path);
+			gulp.src(event.path)
+					.pipe(csslint())
+					.pipe(csslint.reporter());
+	});  
 });

@@ -1,0 +1,67 @@
+.menu{
+	background-color: $bgMenu;
+	width: $widthMenu;
+	height: $heightMenu;
+	position: fixed;
+    left: 0;
+
+	@include element(header){
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #2dcc70;
+		height: $heightHeader;
+
+		@include modifier(content){
+			width: 166px;
+			height: 50px;			
+			line-height: 50px;
+		}
+	}
+	
+	@include element(avatar){
+	    width: 50px;
+	    height: 50px;
+	    background-color: blue;
+	    border-radius: 50%;
+	    margin-right: 5px;
+	    float: left;
+	}
+
+	@include element(name){
+		font-size: 14px;
+    	color: #fff;
+	}
+	
+	@include element(list){
+		width: 100%;		
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-top: 20px;
+
+		> li{
+			color: #93a5a5;			
+			height: 50px;
+			margin-bottom: 20px;
+			line-height: 50px;
+			padding-left: 20px;
+			cursor: pointer;
+			font-size: 15px;
+
+			&:hover{
+				background-color: $hoverMenu;
+			}
+
+			&.active{
+				background-color: $activeMenu;				
+			}
+
+			> span{
+				font-size: 18px;
+				margin-right: 15px;
+
+			}
+		}
+	}
+}
