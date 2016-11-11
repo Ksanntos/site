@@ -1,16 +1,18 @@
 /*
     Import Components
 */
-@import "components/_variaveis.scss";
-@import "components/_mixins.scss";
-@import "components/_fonts.scss";
-@import "components/_resets.scss";
-@import "components/_help.scss";
-@import "components/_header.scss";
-@import "components/_menu.scss";
+@import "components/_variaveis";
+@import "components/_mixins";
+@import "components/_fonts";
+@import "components/_resets";
+@import "components/_help";
 @import "components/_forms.scss";
 @import "components/_tables.scss";
 /*
 	Import Layout App
 */
-@import "layout/_layout.scss";
+@import "layout/_header";
+@import "layout/_menu";
+@import "layout/_footer";
+
+@import "pages/_default";
