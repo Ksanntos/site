@@ -1,1 +1,102 @@
-.header{width:100%;height:90px;background-color:#fff;border-bottom:#e5e5e5 solid 1px}.menu{background-color:#34495e;width:200px;height:100%;position:fixed;left:0}.menu__header{display:flex;align-items:center;justify-content:center;background-color:#2dcc70;height:90px}.menu__header--content{width:166px;height:50px;line-height:50px}.menu__avatar{width:50px;height:50px;background-color:blue;border-radius:50%;margin-right:5px;float:left}.menu__name{font-size:14px;color:#fff}.menu__list{width:100%;list-style:none;margin:0;padding:0;margin-top:20px}.menu__list>li{color:#93a5a5;height:50px;margin-bottom:20px;line-height:50px;padding-left:20px;cursor:pointer;font-size:15px}.menu__list>li:hover{background-color:#233342}.menu__list>li.active{background-color:#233342}.menu__list>li>span{font-size:18px;margin-right:15px}html,body{background-color:#ecf0f1}.wrap{width:100%;height:100vh;position:relative;padding-left:200px}.block{color:red}.block__element{color:green}.block__element--modifier{color:blue}.site-header{z-index:3}.teste{z-index:4}.site-header{padding:2rem;font-size:1.8rem}@media only screen and (min-width: 1024px){.site-header{padding-top:4rem;font-size:2.4rem}}
+/*
+    Import Components
+*/
+/*
+	BEM
+*/
+/*
+	Controla todos os Zindexs
+*/
+/*
+	Import Layout App
+*/
+.header {
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  border-bottom: #e5e5e5 solid 1px; }
+
+.menu {
+  background-color: #34495e;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  left: 0; }
+  .menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2dcc70;
+    height: 90px; }
+    .menu__header--content {
+      width: 166px;
+      height: 50px;
+      line-height: 50px; }
+  .menu__avatar {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-right: 5px;
+    float: left; }
+  .menu__name {
+    font-size: 14px;
+    color: #fff; }
+  .menu__list {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px; }
+    .menu__list > li {
+      color: #93a5a5;
+      height: 50px;
+      margin-bottom: 20px;
+      line-height: 50px;
+      padding-left: 20px;
+      cursor: pointer;
+      font-size: 15px; }
+      .menu__list > li:hover {
+        background-color: #233342; }
+      .menu__list > li.active {
+        background-color: #233342; }
+      .menu__list > li > span {
+        font-size: 18px;
+        margin-right: 15px; }
+
+/*
+    Paginas internas
+*/
+html,
+body {
+  background-color: #ecf0f1; }
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding-left: 200px; }
+
+/* Exemplos */
+.block {
+  color: red; }
+  .block__element {
+    color: green; }
+    .block__element--modifier {
+      color: blue; }
+
+.site-header {
+  z-index: 3; }
+
+.teste {
+  z-index: 4; }
+
+.site-header {
+  padding: 2rem;
+  font-size: 1.8rem; }
+  @media only screen and (min-width: 1024px) {
+    .site-header {
+      padding-top: 4rem;
+      font-size: 2.4rem; } }
+
+/*# sourceMappingURL=index.css.map */
