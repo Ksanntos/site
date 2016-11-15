@@ -27,9 +27,7 @@
 }
 
 @mixin sombra(){
-    box-shadow: 5px 5px 11px #888;
-    -webkit-box-shadow: 5px 5px 11px #888;
-    -moz-box-shadow: 5px 5px 11px #888;    
+    box-shadow: 0 2px 10px rgba(17, 17, 17, 0.25);   
 }
 
 @mixin opacity(){

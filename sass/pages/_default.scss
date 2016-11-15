@@ -1,13 +1,12 @@
-html,
 body{
-    background-color: $bgApp;
+    padding-left: $widthMenu;  
 }
 
 .wrap {
     width: 100%;
     height: 100vh;
     position: relative;
-    padding-left: $widthMenu;
+    /*padding-left: $widthMenu;*/
 }
 
 /* Exemplos */

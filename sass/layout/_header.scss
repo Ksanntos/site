@@ -2,5 +2,6 @@
     width: $widthHeader;
     height: $heightHeader;
     background-color: #fff;
-    border-bottom: #e5e5e5 solid 1px;
+    @include sombra();
+    outline: #e2e2e2 solid 1px;
 }
